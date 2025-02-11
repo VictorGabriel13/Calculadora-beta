@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculadora Em Java-Script</title>
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="website icon" type="webp" href="icon/calculator-icon.webp">
+    <style>
+        #Button-Clear {
+            background-color: crimson;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 5px;
+            height: 40px;
+            width: 50px;
+            font-size: 25px;
+            text-align: center;
+            cursor: pointer;
+        }
+        h1 {
+            position: absolute;
+            color: black;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora 📱</h1>
+        <div class="calc">
+            <div class="display">
+                <button id="Button-Clear" onclick="clean()" style="width: 30px;">C</button>
+                <input type="text" id="num1" placeholder="0000">
+            </div>
+            <div class="number">
+                <div class="row">
+                    <button onclick="insert('7')" class="btn-number">7</button>
+                    <button onclick="insert('8')" class="btn-number">8</button>
+                    <button onclick="insert('9')" class="btn-number">9</button>
+                    <button class="btn-operation" onclick="insert('/')">÷</button>
+                </div>
+                <div class="row">
+                    <button onclick="insert('4')" class="btn-number">4</button>
+                    <button onclick="insert('5')" class="btn-number">5</button>
+                    <button onclick="insert('6')" class="btn-number">6</button>
+                    <button class="btn-operation" onclick="insert('*')">×</button>
+                </div>
+                <div class="row">
+                    <button onclick="insert('1')" class="btn-number">1</button>
+                    <button onclick="insert('2')" class="btn-number">2</button>
+                    <button onclick="insert('3')" class="btn-number">3</button>
+                    <button onclick="insert('+')" class="btn-operation">+</button>
+                </div>
+            <div class="row">
+                <button onclick="insert('0')" class="btn-number">0</button>
+                <button onclick="insert('.')" class="btn-number">•</button>
+                <button class="btn-result" onclick="resultado()">=</button>
+                <button class="btn-operation" onclick="insert('-')">-</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script/main.js"></script>
+<script>
+    window.alert('Essa Cálculadora eu criei para treinar as minhas hábilidades em Java-Script e em HTML E CSS'); 
+</script>
+</html>

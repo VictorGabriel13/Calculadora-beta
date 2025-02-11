@@ -1,0 +1,98 @@
+body {
+    background-color: #e7e5e5;
+    font-family: Arial;
+    color: white;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+.calc {
+    background-color: #F5F5F5;
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    padding-right: 5px;
+    transform: translate(-50%, -50%);
+    height: 470px;
+    border-radius: 20px;
+    border: 3px solid #CCC;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.304);
+    cursor: pointer;
+}
+.display {
+    text-align: center;
+}
+.number {
+    margin-left: 25px;
+}
+#num1 {
+    margin-top: 5%;
+    margin-bottom: 10px;
+    background-color: #c3c3c3;
+    width: 80%;
+    margin-left: 5px;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: end;
+    font-size: 40px;
+    border: 3px solid black;
+}
+.btn-number {
+    width: 25%;
+    background-color: gainsboro;
+    border: 3px solid black;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    text-align: none;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.btn-operation {
+    background-color: #c3c3c3;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 10.5px;
+    text-align: center;
+    color: white;
+    background-color: #c3c3c3;
+    border: 3px solid #898888;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    width: 20%;
+}
+.btn-number:hover {
+    background-color: rgb(164, 163, 163);
+}
+.btn-operation:hover {
+    background-color: gainsboro;
+}
+.btn-result {
+    background-color: rgba(225, 150, 11, 0.984);
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 10.5px;
+    text-align: center;
+    color: white;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    width: 25%;
+}
+.btn-result:hover {
+    background-color:  rgba(225, 150, 11, 0.826);;
+}
